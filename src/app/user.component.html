@@ -1,0 +1,26 @@
+<section>
+  <mat-card class="card">
+      
+    <mat-card-content>
+      <mat-form-field>
+        <input
+          [(ngModel)]="model.firstName"
+          matInput
+          placeholder="First Name"
+        />
+      </mat-form-field>
+    </mat-card-content>
+
+    <mat-card-content>
+      <mat-form-field>
+        <input [(ngModel)]="model.lastName" matInput placeholder="last Name" />
+      </mat-form-field>
+
+      <mat-card-actions>
+        <button (click)="post()" mat-raised-button mat-button color="primary">
+          Save Changes
+        </button>
+      </mat-card-actions>
+    </mat-card-content>
+  </mat-card>
+</section>
