@@ -1,12 +1,12 @@
 <div>
   <mat-card
-    style="background-image: url('../assets/phot.jpg'); background-size: cover;"
+    style="background-image: url('../assets/phot.jpg'); background-size: cover"
   >
     <form [formGroup]="form" (ngSubmit)="onSubmit()">
       <mat-card-content>
         <mat-form-field>
           <input
-            style="widows: 350px;"
+            style="widows: 350px"
             [ngClass]="{
               error: isValid('firstName')
             }"
@@ -20,7 +20,7 @@
       <mat-card-content>
         <mat-form-field>
           <input
-            style="widows: 350px;"
+            style="widows: 350px"
             [ngClass]="{
               error: isValid('lastName')
             }"
@@ -34,7 +34,7 @@
       <mat-card-content>
         <mat-form-field>
           <input
-            style="widows: 350px;"
+            style="widows: 350px"
             [ngClass]="{
               error: isValid('email')
             }"
@@ -49,7 +49,7 @@
       <mat-card-content>
         <mat-form-field>
           <input
-            style="widows: 350px;"
+            style="widows: 350px"
             [ngClass]="{
               error: isValid('password')
             }"
@@ -64,7 +64,7 @@
       <mat-card-content>
         <mat-form-field>
           <input
-            style="widows: 350px;"
+            style="widows: 350px"
             [ngClass]="{
               error: isValid('confirmPwd')
             }"
@@ -76,9 +76,7 @@
         </mat-form-field>
       </mat-card-content>
       <br />
-      <span *ngIf="form.errors?.mismatchfields">
-        Passwords do not match
-      </span>
+      <span *ngIf="form.errors?.mismatchfields"> Passwords do not match </span>
 
       <br />
 
