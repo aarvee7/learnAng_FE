@@ -7,7 +7,6 @@ import { NavComponent } from './nav.component';
   //templateUrl: './app.component.html',
   template: `
     <nav></nav>
-
     <router-outlet></router-outlet>
   `,
   styleUrls: ['./app.component.css'],

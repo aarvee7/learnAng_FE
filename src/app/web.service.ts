@@ -10,7 +10,8 @@ import { AuthService } from './auth.service';
 
 @Injectable()
 export class WebService {
-  BASE_URL = 'http://localhost:3000';
+  //BASE_URL = 'http://localhost:3000';
+  BASE_URL = 'https://node-test-rv235.herokuapp.com';
   private msgStore = [];
 
   private msgSubject = new Subject();
@@ -18,7 +19,7 @@ export class WebService {
   msgs = this.msgSubject.asObservable();
 
   constructor(private http: Http, private auth: AuthService) {
-    this.getMessages();
+    this.getMessages('');
   }
 
   getMessages(user) {
